@@ -9,7 +9,7 @@ import { Container, Row, Col } from "./components/Grid";
 
 class App extends Component {
   state = {
-    Books: [],
+    books: [],
     bookSearch: ""
   };
 
@@ -65,18 +65,19 @@ class App extends Component {
           </Row>
           <Row>
             <Col size="xs-12">
-              <br />
-              {!this.state.book.length ? (
+              {/* <br /> */}
+              {!this.state.books.length ? (
                 <h3 className="text-center">No Books to Display</h3>
               ) : (
                 <BookList>
-                  {this.state.book.map(book => {
+                  {this.state.books.map(book => {
                     return (
                       <BookListItem
                         key={book.title}
                         title={book.title}
+                        authors={book.authors}
                         href={book.href}
-                        summary={book.summary}
+                        description={book.description}
                         thumbnail={book.thumbnail}
                       />
                     );
