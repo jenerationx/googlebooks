@@ -24,7 +24,7 @@ class App extends Component {
   handleFormSubmit = event => {
     // When the form is submitted, prevent its default behavior, get recipes update the recipes state
     event.preventDefault();
-    API.getRecipes(this.state.bookSearch)
+    API.getBooks(this.state.bookSearch)
       .then(res => this.setState({ books: res.data }))
       .catch(err => console.log(err));
   };
@@ -65,7 +65,7 @@ class App extends Component {
           </Row>
           <Row>
             <Col size="xs-12">
-              {/* <br /> */}
+              <br />
               {!this.state.books.length ? (
                 <h3 className="text-center">No Books to Display</h3>
               ) : (
