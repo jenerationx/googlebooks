@@ -1,0 +1,8 @@
+.jumbotron {
+  min-height: 300px;
+  padding-top: 100px;
+  border-radius: 0 !important;
+  background-size: cover;
+  text-shadow: 1px 1px 2px darkslategray;
+  font-family: 'Poppins', sans-serif;
+}
