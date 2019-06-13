@@ -6,7 +6,7 @@ const SavedResult = props => {
         <div className="card">
             <div className="card-body player">
                 <div className="article">
-                    <h3>Books that You Saved</h3>
+                    <h3>Saved Books</h3>
                 </div>
             </div>
         </div>
@@ -14,7 +14,7 @@ const SavedResult = props => {
         <div className="card">
             <div className="card-body player">
                 <div className="article">
-                    <h3>Books that You Saved</h3>
+                    <h3>Saved Books</h3>
                     {props.savedBooks.map(savedbook => {
                         return (
                             <li className="saved-list list-group-item">
