@@ -24,10 +24,6 @@ class SearchBooks extends Component {
     // once it clicks it connects to the google book api with the search value
     API.getGoogleSearchBooks(this.state.search)
       .then(res => {
-        if (res.data.items === "error") {
-          throw new Error(res.data.items);
-        }
-        else {
           // store response in an array
           let results = res.data.items
           //map through the array 
@@ -47,12 +43,11 @@ class SearchBooks extends Component {
           // reset the sate of the empty books array to the new arrays of objects with properties geting back from the response
           this.setState({ books: results })
         }
-      })
+      )
       .catch(err => console.log(err));
   }
 
   handleSavedButton = event => {
-    // console.log(event)
     event.preventDefault();
     console.log(this.state.books)
     let savedBooks = this.state.books.filter(book => book.id === event.target.id)
