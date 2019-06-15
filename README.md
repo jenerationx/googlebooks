@@ -6,4 +6,5 @@ In this activity, we created a React-based Google Books Search app. This assignm
 
 ## Live App
 [Click here to go to the live app!](https://googlebooks1127.herokuapp.com/saved)
+
 ![Screenshot of Clicky Game](https://github.com/jenerationx/googlebooks/blob/master/screenshot.png)
