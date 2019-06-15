@@ -27,10 +27,10 @@ const SavedResult = props => {
                                     {/* show information of the book */}
                                     <Col size="9" className="bookInfo">
                                         <Row>
-                                            <h2 className="bookTitle">{savedbook.title}</h2>
+                                            <h3 className="bookTitle">{savedbook.title}</h3>
                                         </Row>
                                         <Row>
-                                            <h3 className="bookAuthor">{savedbook.authors}</h3>
+                                            <h4 className="bookAuthor">{savedbook.authors}</h4>
                                         </Row>
                                         <Row>
                                             <p className="bookDescription">{savedbook.description}</p>
@@ -39,11 +39,11 @@ const SavedResult = props => {
                                 </Row>
                                 <br></br>
                                 <Row className="buttonDiv ">
-                                    <button className="deleteBook btn btn-danger" id={savedbook._id} onClick={() => props.handleDeleteButton(savedbook._id)}>
+                                    <button className="deleteBook btn btn-primary m-1" id={savedbook._id} onClick={() => props.handleDeleteButton(savedbook._id)}>
                                         Delete Book
                                     </button>
                                     <a href={savedbook.link} target="_blank" rel="noopener noreferrer">
-                                        <button className="viewBook btn btn-success">
+                                        <button className="viewBook btn btn-primary m-1">
                                             View Book
                                         </button>
                                     </a>
