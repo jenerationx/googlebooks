@@ -28,7 +28,7 @@ const SearchResult = props => {
                         <h3 className="bookTitle">{book.title}</h3>
                       </Row>
                       <Row>
-                        <h4 className="bookAuthor">{book.authors}</h4>
+                        <h4 className="bookAuthor">{[book.authors]}</h4>
                       </Row>
                       <Row>
                         <p className="bookDescription">{book.description}</p>
