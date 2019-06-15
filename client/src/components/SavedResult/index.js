@@ -30,7 +30,7 @@ const SavedResult = props => {
                                             <h3 className="bookTitle">{savedbook.title}</h3>
                                         </Row>
                                         <Row>
-                                            <h4 className="bookAuthor">{savedbook.authors}</h4>
+                                            <h4 className="bookAuthor">{[savedbook.authors]}</h4>
                                         </Row>
                                         <Row>
                                             <p className="bookDescription">{savedbook.description}</p>
